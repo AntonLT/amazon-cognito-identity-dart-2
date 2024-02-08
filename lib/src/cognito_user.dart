@@ -910,6 +910,7 @@ class CognitoUser {
     if (_deviceKey != null) {
       challengeResponses['DEVICE_KEY'] = _deviceKey;
     }
+    await cacheDeviceKeyAndPassword();
 
     final paramsReq = {
       'ChallengeName': mfaType,
