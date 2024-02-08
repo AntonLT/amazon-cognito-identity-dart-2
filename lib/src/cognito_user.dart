@@ -642,6 +642,7 @@ class CognitoUser {
     String srpUsername = challengeParameters['USER_ID_FOR_SRP'];
     if (username != srpUsername) {
       username = srpUsername;
+      await getCachedDeviceKeyAndPassword();
     }
     serverBValue = BigInt.parse(challengeParameters['SRP_B'], radix: 16);
     saltString =
