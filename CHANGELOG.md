@@ -1,3 +1,15 @@
+## 3.6.4
+- added: optional Refresh Token revocation on sign-out
+
+## 3.6.3
+- added: secret hash in SMS MFA
+
+## 3.6.2
+- bumped: js from 0.6.7 to 0.7.0
+
+## 3.6.1
+- fixed: username assignment during _authenticateUserDefaultAuth in CognitoUser
+
 ## 3.6.0
 - http dependency includes older 0.13.1 version as valid
 - added: additional support for mfa functionalities
